@@ -31,9 +31,6 @@ public class Resize {
 
 	}
 
-	public void cmykToRGB() {
-
-	}
 
 	Scanner sc = new Scanner(System.in);
 
