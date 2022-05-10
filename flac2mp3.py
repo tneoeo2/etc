@@ -15,6 +15,6 @@ for file in file_list :
     flac_audio = AudioSegment.from_file(file, "flac")
     flac_audio.export(EXPORT_PATH + file_name + ".mp3", format="mp3")
 
-
+ 
 
 ##? conda install -c main ffmpeg  <
