@@ -7,10 +7,11 @@ setInterval(() => {
 }, 500)
 
 
-document.querySelectorAll('*').forEach((el)=>{
-    const checkBgImage = getComputedStyle(el).backgroundImage !== "none";
-    if(checkBgImage){
-         el.style.backgroundImage='url("https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5372%2F2022%2F01%2F07%2F0000088166_004_20220114150604769.jpg&type=sc960_832")';
-     }
-   })
-   
+setInterval(() => {
+    document.querySelectorAll('*').forEach((el)=>{
+        const checkBgImage = getComputedStyle(el).backgroundImage !== "none";
+        if(checkBgImage){
+            el.style.backgroundImage='url("https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5372%2F2022%2F01%2F07%2F0000088166_004_20220114150604769.jpg&type=sc960_832")';
+        }
+    })
+}, 1000)
